@@ -1,0 +1,75 @@
+Objective
+
+The objective of this step was to conduct a detailed in-silico functional and structural characterization of the protein.
+Based on previous homology and sequence analyses, the protein was identified as a serine endoprotease, a surface protease responsible for the housekeeping of exported proteins and playing a key role in stress resistance during active exponential growth.
+
+Conserved Domain Analysis (NCBI-CDD)
+
+To identify conserved functional regions, the Conserved Domain Database (CDD) was used.
+CDD analysis revealed the presence of a DegP/HtrA_DO (High-Temperature Requirement A) domain spanning amino acids 44–461, with a highly significant E-value < 1e−50.
+This indicates that the protein is complete, functionally intact, and belongs to the HtrA family of serine proteases.
+The presence of this conserved catalytic domain supports the prediction that the protein exhibits proteolytic activity associated with protein quality control.
+
+Domain Architecture (InterPro Analysis)
+
+Further functional insights were obtained using the InterPro database.
+InterPro analysis confirmed that the protein (466 amino acids in total) belongs to the HtrA-related serine protease family (Peptidase S1C).
+The protein contains:
+
+One trypsin-like serine protease domain, responsible for catalytic cleavage activity.
+
+Two PDZ domains, which mediate substrate binding and protein–protein interactions.
+
+The coexistence of these domains is a characteristic feature of HtrA/DegP proteases, which act as dual-function chaperones and proteases, ensuring proper folding and degradation of misfolded periplasmic proteins.
+
+Signal Peptide Prediction (SignalP Analysis)
+
+The SignalP server was used to predict the protein’s localization and signal peptide cleavage site.
+Results indicated that the protein is a classical Sec-dependent secreted protein, with the first 22 amino acids acting as a signal peptide.
+Upon cleavage, the remaining mature protein becomes functionally active.
+The analysis further confirmed that the protein is not cytoplasmic and not a lipoprotein, as the lipobox scores were near zero.
+This pattern is consistent with periplasmic localization of HtrA family proteases.
+
+Subcellular Localization (PSORTb Analysis)
+
+The PSORTb tool was used to confirm the subcellular localization.
+Results predicted that the protein is periplasmic, consistent with its function in maintaining protein quality in the cell envelope.
+Periplasmic localization is biologically significant for Shigella flexneri, as it allows the protease to monitor exported proteins and protect the bacterium against environmental and host-induced stresses.
+
+Domain Validation (SMART Analysis)
+
+To further validate domain organization, SMART (Simple Modular Architecture Research Tool) was employed.
+SMART analysis identified:
+
+A Trypsin domain (amino acids 66–242)
+
+A Trypsin_2 domain (amino acids 85–219)
+
+Two PDZ domains — the first spanning aa 269–337 (E-value = 9.01e−08, high confidence), and the second spanning aa 364–454 (E-value = 8.37, moderate confidence).
+
+This domain combination confirms that the protein is a multifunctional serine protease with both catalytic and substrate recognition capabilities.
+Collectively, the protein architecture reflects a functional DegP/HtrA-like protease capable of binding, refolding, or degrading misfolded proteins under stress.
+
+Homology and Structural Similarity
+
+Homology searches against the Protein Data Bank (PDB) revealed that the trypsin domain of the protein shows strong similarity to experimentally characterized serine proteases, including PDB ID: 8K2Y (HtrA protease structure).
+This structural resemblance supports its functional classification as a serine protease, validating both its catalytic mechanism and substrate recognition pattern.
+The SCOP database (ID: 8073979) further confirmed its structural classification within the Peptidase S1 family.
+
+Protein Interaction Network (STRING Analysis)
+
+To understand potential functional partners and biological pathways, STRING database analysis was performed.
+Predicted interaction partners included histidine kinases (HK25, HK28, and HK45), suggesting that the protease is involved in stress-responsive signal transduction.
+Such interactions are consistent with a role in cell envelope stress response, where the protease modulates protein stability in coordination with signaling pathways that detect environmental stress conditions.
+
+Predicted Biological Function
+
+Combining the evidence from conserved domain analysis, InterPro, SMART, and subcellular localization data, the protein is predicted to function as a periplasmic serine endoprotease that contributes to protein quality control and bacterial stress response.
+It likely acts by degrading misfolded or denatured periplasmic proteins, preventing toxic accumulation during stress or infection, and thus contributes to bacterial survival and virulence regulation.
+
+Conclusion
+
+Integration of conserved domain, subcellular localization, structural, and interaction analyses provides a unified biological understanding of the protein.
+The Shigella flexneri serine endoprotease (YjbJ/HtrA-like protein) is a Sec-dependent periplasmic protease possessing both catalytic and substrate-binding domains.
+Its interaction with histidine kinases suggests a regulatory role in stress adaptation pathways.
+Collectively, these findings confirm the protein’s role as a housekeeping protease responsible for maintaining periplasmic protein quality and stress resistance during bacterial growth.
