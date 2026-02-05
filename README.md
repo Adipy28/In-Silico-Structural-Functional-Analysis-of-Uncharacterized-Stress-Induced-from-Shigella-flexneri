@@ -1,0 +1,2 @@
+# In-Silico-Structural-Functional-Analysis-of-Uncharacterized-Stress-Induced-from-Shigella-flexneri
+In-silico analysis of Shigella flexneri's YjbJ (UPF0337, P68208) using Biopython reveals 7.7 kDa stable periplasmic protein. BLASTp shows E. coli/Salmonella homology. Clustal Omega finds conserved N-terminal residues. TMHMM predicts no TM helices. Phyre2/ColabFold models β-sheet fold (PDB:1RYK) with interaction sites for envelope stress response.
