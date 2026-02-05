@@ -1,0 +1,46 @@
+# Step 5 of the project performs parsing and interpretation of BLASTp results.
+# The BLAST XML file obtained from Step 4 is parsed using Biopython to extract
+# homologous proteins, their alignment lengths, E-values, identity percentages, and regions.
+# This helps to identify conserved proteins and infer possible functional similarities.
+
+from Bio.Blast import NCBIXML
+import ssl
+import os
+
+ssl._create_default_https_context = ssl._create_unverified_context
+
+blast_xml = "blast_result.xml"
+
+
+if not os.path.exists(blast_xml):
+    print(f"ERROR: Cannot find {blast_xml}")
+    print("Please run STEP3_BlastP_Analysis.py first to generate BLAST results.")
+    exit()
+
+# --- Step 2: Parse BLAST XML ---
+with open(blast_xml) as handle:
+    blast_record = NCBIXML.read(handle)
+
+print("="*90)
+print(f"Total alignments (homologs) found: {len(blast_record.alignments)}")
+print("="*90)
+
+# --- Step 3: Loop through each alignment and extract key data ---
+for i, alignment in enumerate(blast_record.alignments, start=1):
+    print(f"\nHomolog {i}: {alignment.title}")
+    print(f"Length: {alignment.length}")
+
+    # Go through each HSP (High-scoring Segment Pair)
+    for hsp in alignment.hsps:
+        print(f"  E-value: {hsp.expect}")
+        print(f"  Score (bits): {hsp.bits}")
+        print(f"  Identities: {hsp.identities}/{hsp.align_length} "
+              f"({(hsp.identities/hsp.align_length)*100:.2f}%)")
+        print(f"  Query region: {hsp.query_start}-{hsp.query_end}")
+        print(f"  Subject region: {hsp.sbjct_start}-{hsp.sbjct_end}")
+        break  # Only display first HSP per hit for clarity
+
+print("\n" + "="*90)
+print("BLAST parsing completed successfully.")
+print("Top homologs and alignment statistics have been displayed.")
+print("="*90)
