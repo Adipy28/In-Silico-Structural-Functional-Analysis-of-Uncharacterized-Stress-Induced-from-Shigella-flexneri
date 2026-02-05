@@ -1,0 +1,82 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "metadata": {
+        "accession": "IPR008462",
+        "name": "CsbD-like domain",
+        "source_database": "interpro",
+        "type": "domain",
+        "integrated": null,
+        "member_databases": {
+          "pfam": {
+            "PF05532": "CsbD-like"
+          }
+        },
+        "go_terms": null
+      },
+      "proteins": [
+        {
+          "accession": "p68208",
+          "protein_length": 69,
+          "source_database": "reviewed",
+          "organism": "623",
+          "in_alphafold": true,
+          "in_bfvd": false,
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 4,
+                  "end": 56,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": false,
+              "model": null,
+              "score": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "accession": "PF05532",
+        "name": "CsbD-like",
+        "source_database": "pfam",
+        "type": "domain",
+        "integrated": "IPR008462",
+        "member_databases": null,
+        "go_terms": null
+      },
+      "proteins": [
+        {
+          "accession": "p68208",
+          "protein_length": 69,
+          "source_database": "reviewed",
+          "organism": "623",
+          "in_alphafold": true,
+          "in_bfvd": false,
+          "entry_protein_locations": [
+            {
+              "fragments": [
+                {
+                  "start": 4,
+                  "end": 56,
+                  "dc-status": "CONTINUOUS"
+                }
+              ],
+              "representative": false,
+              "model": "PF05532",
+              "score": 4.7e-19
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
